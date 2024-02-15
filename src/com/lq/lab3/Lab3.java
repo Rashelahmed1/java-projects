@@ -54,9 +54,12 @@ public class Lab3 {
 	
 	for(int x = 1 ; x <= 100 ; x++) {
 		if(x > 49 && x <61 ) {
-			continue;
+//			continue;
 		}
-		//System.out.println(x);
+		else {
+			System.out.println(x);
+		}
+		
 	}
 	
 	int x = 1;
