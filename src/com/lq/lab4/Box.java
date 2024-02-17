@@ -10,19 +10,40 @@ public class Box {
 		return height;
 	}
 	public void setHeight(double height) {
-		this.height = height;
+		if(height <= 0 ) {
+			System.out.println("Height must be greater than zero");
+			this.height = 1 ;
+		}
+		else {
+			this.height = height;
+		}
+		
 	}
 	public double getWidth() {
 		return width;
 	}
 	public void setWidth(double width) {
-		this.width = width;
+		if(width <= 0) {
+			System.out.println("Width must be getter than zero");
+			this.width = 1;
+		}
+		else {
+			this.width = width;
+		}
+		
 	}
 	public double getLength() {
 		return length;
 	}
 	public void setLength(double length) {
-		this.length = length;
+		if(length <= 0) {
+			System.out.println("Length must be greather than zero");
+			this.length = 1 ;
+		}
+		else {
+			this.length = length;
+		}
+		
 	}
 	
 	public Box(double height,double width,double length) {
@@ -58,7 +79,7 @@ public class Box {
 
 	public void PrintBox() {
 		if(getLength() <= 0 || getHeight() <= 0 || getWidth() <= 0) {
-			 System.out.println("box con contain invalid properties");
+			 System.out.println("box contain invalid properties");
 		}
 		else {
 			
