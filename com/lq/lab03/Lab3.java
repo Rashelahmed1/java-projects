@@ -13,6 +13,17 @@ public class Lab3 {
 	}
 
 	System.out.println();
-
+	for(int i = -4 ; i <= 31; i ++) {
+		if(i < 1 ) {
+			System.out.print("\t");
+		}else {
+			System.out.print(i+ "\t");
+		}
+		if(i == 2 || i == 9 || i == 16 || i == 23 || i == 30) {
+			System.out.println();
+		}
+		
+		
+	}
 }
 }
