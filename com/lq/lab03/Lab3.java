@@ -25,5 +25,28 @@ public class Lab3 {
 		
 		
 	}
+	
+	System.out.println("-----------------------------");
+	for (String string : daysOfWeek) {
+		System.out.println(string);
+	}
+	System.out.println("-----------------------------");
+	for(int i = daysOfWeek.length -1; i > -1; i-- ) {
+		
+		System.out.println(daysOfWeek[i]);
+		
+		}
+	System.out.println("-----------------------------");
+	int i = 1;
+	while (i <= 20) {
+		i++;
+		if (i % 2 == 0) {
+			System.out.println(i);
+		}
+		else {
+			continue;
+		}
+		
+	}
 }
 }
