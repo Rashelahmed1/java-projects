@@ -48,5 +48,51 @@ public class Lab3 {
 		}
 		
 	}
+	System.out.println("-----------------------------");
+
+	for(int x = 1 ; x <= 100 ; x++) {
+		if(x > 49 && x <61 ) {
+			continue;
+		}
+		else {
+			System.out.println(x);
+		}
+		
+	}
+	System.out.println("-----------------------------");
+	
+	int x = 1;
+	while(x <= 12) {
+		System.out.println(x);
+		
+	switch (x) {
+	case  1 :
+	case 3 :
+	case 5 :
+	case 7 :
+	case 8 :
+	case 10 :
+	case 12 :
+	System.out.println(monthNames[x-1] +" = 31");
+	break;
+	case 2 :
+		System.out.println(monthNames[x-1] +" = 28");
+	break;
+
+	case 4 :
+	case 6 :
+	case 9 :
+	case 11 :
+		System.out.println(monthNames[x-1] + " = 30");
+	break;
+
+	
+	
+}
+	
+	x++;
+	}	
+	
+	
 }
 }
