@@ -93,6 +93,22 @@ public class Box {
 		double surface =  2 * getLength() * getWidth() + 2 * getHeight() * getWidth() + 2 * getLength() * getHeight() ;
 		return surface ;
 	}
+	public void PrintBox() {
+		if(getLength() <= 0 || getHeight() <= 0 || getWidth() <= 0) {
+			 System.out.println("box contain invalid properties");
+		}
+		else {
+			
+			System.out.println("Length = " + getLength());
+			System.out.println("Width = " + getWidth());
+			System.out.println("Heigth = " + getHeight());
+			System.out.println("Surface Ares = " + getSurfaceArea());
+			System.out.println("Volume = "+getVolume());
+		}
+	
+	
+	}
+
 
 
 
