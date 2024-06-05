@@ -68,5 +68,32 @@ public class Box {
 		setLength(length);
 		setWidth(width);
 		
+	
+	
+	
 	}
+
+	public Box(double side) {
+		setHeight(side);
+		setLength(side);
+		setWidth(side);
+	}
+
+
+	public double getVolume() {
+		double vol = getLength() * getHeight() * getLength() ;
+		return   vol ;
+	}
+
+
+	public double getSurfaceArea(){
+		int  getLength;
+		int getWidth;
+		int getHeight;
+		double surface =  2 * getLength() * getWidth() + 2 * getHeight() * getWidth() + 2 * getLength() * getHeight() ;
+		return surface ;
+	}
+
+
+
 }
