@@ -44,7 +44,12 @@ public class BoxDriverMain {
 	box1.PrintBox();
 	System.out.println("--------------");
 	box2.PrintBox();
+	System.out.println("--------------");
 	
+	box1.setLength(-5);
+	box1.setHeight(-5);
+	box1.setWidth(-5);
+	box1.PrintBox();
 	
 	}
 
