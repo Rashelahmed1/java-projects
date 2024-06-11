@@ -8,7 +8,7 @@ public class ScientificCalculator {
 
 
 	public double exp(double x){
-		return 0.0;
+		return Math.exp(x);
 		
 	}
 
@@ -21,7 +21,7 @@ public class ScientificCalculator {
 	}
 
 	public double log(double y) {
-		return 0.0;
+		return Math.log(y);
 		
 	}
 }
