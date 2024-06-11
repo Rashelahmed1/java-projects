@@ -3,29 +3,29 @@ package com.lq.lab05;
 public class TrigonometricCalculator {
 
 	public double sine(double a) {
-		return 0;
+		return Math.sin(a);
 	}
 	
 
 	public double cosine(double b) {
-		return 0;
+		return Math.cos(b);
 	}
 
 	public double tangent(double c) {
-		return 0;
+		return Math.tan(c);
 		
 	}
 	
 	public double arcsine(double d) {
-		return 0;
+		return Math.asin(d);
 		
 	}
 	public double arccosine(double e) {
-		return 0;
+		return Math.acos(e);
 		
 	}
 	public double arctangent(double f) {
-		return 0;
+		return Math.atan(f);
 		
 	}
 
