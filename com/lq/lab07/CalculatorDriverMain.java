@@ -1,5 +1,6 @@
 package com.lq.lab07;
 import com.lq.lab05.BasicCalculator;
+import com.lq.lab05.ScientificCalculator;
 
 public class CalculatorDriverMain {
 
@@ -15,6 +16,16 @@ public class CalculatorDriverMain {
 		System.out.println("SubTract = " +subTract);
 		System.out.println("Multiply = " +multiply);
 		System.out.println("Divide = " +divide);
+		
+		System.out.println("----------------------");
+		
+		ScientificCalculator c1 = new ScientificCalculator();
+		
+		double expResult = c1.exp(2.3);
+		double logResult = c1.log(3.4);
+
+		System.out.println( "Exp = " +expResult);
+		System.out.println("Log = " +logResult);
 
 	}
 
