@@ -1,6 +1,7 @@
 package com.lq.lab07;
 import com.lq.lab05.BasicCalculator;
 import com.lq.lab05.ScientificCalculator;
+import com.lq.lab05.TrigonometricCalculator;
 
 public class CalculatorDriverMain {
 
@@ -26,7 +27,36 @@ public class CalculatorDriverMain {
 
 		System.out.println( "Exp = " +expResult);
 		System.out.println("Log = " +logResult);
-
+		
+		System.out.println("----------------------");
+		
+		TrigonometricCalculator t1 = new TrigonometricCalculator();
+		
+		double sineResult = t1.sine(0.1);
+		double cosineResult = t1.cosine(0.2);
+		double tangetResult = t1.tangent(0.3);
+		double arcsineResult = t1.arcsine(0.4);
+		double arccosineResult = t1.arccosine(0.5);
+		double arctangentResult = t1.arctangent(0.6);
+		
+		System.out.println();
+		System.out.println("Sine = " +sineResult);
+		System.out.println("Cosine = " +cosineResult);
+		System.out.println("Tanget = " +tangetResult);
+		System.out.println("Arcsine = " +arcsineResult);
+		System.out.println("Arccosine = " +arccosineResult);
+		System.out.println("Arctanget = " +arctangentResult);
+		
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
 	}
 
 }
