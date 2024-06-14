@@ -88,12 +88,9 @@ public class Box {
 			System.out.println("Surface Ares = " + getSurfaceArea());
 			System.out.println("Volume = "+getVolume());
 		}
-	
-	
+
+
+
+
 	}
-
-
-
-
-
 }
