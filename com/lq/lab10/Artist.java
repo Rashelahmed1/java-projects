@@ -21,6 +21,19 @@ public class Artist {
 
 	
 
+	public Artist() {
+		super();
+		this.memberName =  new TreeSet<String>();
+		this.memberInstruments = new HashMap<String, SortedSet<String>>();
+	}
+	
+	public Artist(String name) {
+		this();
+		setName(name);
+		}
+
+	
+
 	
 
 	
