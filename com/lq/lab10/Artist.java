@@ -11,16 +11,6 @@ public class Artist {
 	private SortedSet<String> memberName  ;
 	private Map<String, SortedSet<String>>  memberInstruments ;
 	
-	public String getName() {
-		return name;
-	}
-
-	public void setName(String name) {
-		this.name = name;
-	}
-
-	
-
 	public Artist() {
 		super();
 		this.memberName =  new TreeSet<String>();
@@ -31,6 +21,31 @@ public class Artist {
 		this();
 		setName(name);
 		}
+	
+	public String getName() {
+		return name;
+	}
+
+	public void setName(String name) {
+		this.name = name;
+	}
+
+	public void addMember(String name,SortedSet<String> memberName) {
+		memberName.add(name);
+		memberInstruments.put(name, memberName);
+	}
+
+	public SortedSet<String> getMemberName() {
+		return memberName;
+	}
+
+	public void setMemberName(SortedSet<String> memberName) {
+		this.memberName = memberName;
+	}
+
+	public  SortedSet<String> getMemberInstruments(String name) {
+		return memberInstruments.get(name);
+	}
 
 	
 
