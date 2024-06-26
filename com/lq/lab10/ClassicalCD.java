@@ -3,16 +3,13 @@ package com.lq.lab10;
 import java.util.Date;
 
 public class ClassicalCD extends Item{
-
+//
 	
 	
 
 	private String compuser;
-	
 	String performers [] = new String [5];
-	
 	private String recordingLocation;
-	
 	private Date releseDate;
 
 	public ClassicalCD(String title, double price, int qty,String recordingLocation,Date releseDate) {
@@ -61,6 +58,11 @@ public class ClassicalCD extends Item{
 	
 	}
 	
+	public void showPerformers() {
+		for(int x = 0 ; x <= i ; x++) {
+			System.out.println(performers[x]);
+		}
+	}
 	
 	
 
