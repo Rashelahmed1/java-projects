@@ -9,6 +9,7 @@ public class ClassicalCD extends Item{
 
 	private String compuser;
 	
+	String performers [] = new String [5];
 	
 	private String recordingLocation;
 	
@@ -43,6 +44,21 @@ public class ClassicalCD extends Item{
 
 	public void setReleseDate(Date releseDate) {
 		this.releseDate = releseDate;
+	}
+	
+	private int i = 0;
+
+	public void addPerformer(String performer) {
+		if(i < performers.length) {
+			performers[i] = performer;
+			i ++ ;
+		}
+		else {
+			System.out.println("no more room int the performersArray");
+		}
+	
+	
+	
 	}
 	
 	
