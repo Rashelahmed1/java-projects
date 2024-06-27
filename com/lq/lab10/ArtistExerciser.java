@@ -21,10 +21,17 @@ public class ArtistExerciser {
         instruments2.add("Tuba");
         hotPlate.addMember("Steve", instruments2);
 
-        
+        printMemberInstruments(hotPlate, "Tom");
+        printMemberInstruments(hotPlate, "Steve");
     }
 
-    
+    private static void printMemberInstruments(Artist artist, String memberName) {
+        System.out.println("Member " + memberName + " plays: \n");
+        SortedSet<String> x = artist.getMemberInstruments(memberName);
+		for (String string : x) {
+			System.out.println(string);
+		}
+    }
         
     }
     
