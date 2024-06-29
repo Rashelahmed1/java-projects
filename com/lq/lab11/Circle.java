@@ -1,6 +1,6 @@
 package com.lq.lab11;
 
-public class Circle {
+public class Circle extends Shape{
 	
 	private double radious;
 	
@@ -12,6 +12,13 @@ public class Circle {
 		this.radious = radious;
 	}
 
+	public Circle(double radious){
+		this.setRadious(radious);
+	}
+	
+	
+
+	
 
 	
 	
