@@ -1,6 +1,6 @@
 package com.lq.lab11;
 
-public class Rectangle extends Shape {
+public class Rectangle extends Shape implements TwoDimensional{
 
 	private double length;
 	private double width;
@@ -32,8 +32,22 @@ public class Rectangle extends Shape {
 	
 
 	
-	
-	
+	@Override
+	public double getArea() {
+		
+		return getWidth()*getLength();
+	}
+	@Override
+	public double getPerimeter() {
+		
+		return 2*(getLength() + getWidth());
+	}
+	@Override
+	public String toString() {
+		return "Rectangle [getLength()=" + getLength() + ", getWidth()=" + getWidth() + ", getArea()=" + getArea()
+				+ ", getPerimeter()=" + getPerimeter() + ", getColor()=" + getColor() + ", getName()=" + getName()
+				+ "]";
+	}
 	
 	
 
