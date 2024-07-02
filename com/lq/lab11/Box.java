@@ -1,6 +1,6 @@
 package com.lq.lab11;
 
-public class Box {
+public class Box extends Shape{
 
 	private double height;
 	private double width;
@@ -10,27 +10,39 @@ public class Box {
 		return height;
 	}
 	public void setHeight(double height) {
-		
+		if(height <= 0 ) {
+			System.out.println("Height must be greater than zero");
+			this.height = 1 ;
+		}
+		else {
 			this.height = height;
-		
+		}
 		
 	}
 	public double getWidth() {
 		return width;
 	}
 	public void setWidth(double width) {
-		
+		if(width <= 0) {
+			System.out.println("Width must be getter than zero");
+			this.width = 1;
+		}
+		else {
 			this.width = width;
-		
+		}
 		
 	}
 	public double getLength() {
 		return length;
 	}
 	public void setLength(double length) {
-		
+		if(length <= 0) {
+			System.out.println("Length must be greather than zero");
+			this.length = 1 ;
+		}
+		else {
 			this.length = length;
-		
+		}
 		
 	}
 	
@@ -48,6 +60,7 @@ public class Box {
 		setLength(side);
 		setWidth(side);
 	}
+
 
 
 
