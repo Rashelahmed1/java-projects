@@ -25,6 +25,54 @@ public class Cube extends Box{
 		setSide(side);
 	}
 
+	@Override
+	public double getHeight() {
+		// TODO Auto-generated method stub
+		return getSide();
+	}
+
+	@Override
+	public void setHeight(double side) {
+		// TODO Auto-generated method stub
+		super.setHeight(side);
+		super.setLength(side);
+		super.setWidth(side);
+	}
+
+	@Override
+	public double getWidth() {
+		// TODO Auto-generated method stub
+		return getSide();
+	}
+
+	@Override
+	public void setWidth(double side) {
+		// TODO Auto-generated method stub
+		super.setWidth(side);
+		super .setLength(side);
+		super.setHeight(side);
+	}
+
+	@Override
+	public double getLength() {
+		// TODO Auto-generated method stub
+		return getSide();
+	}
+
+	@Override
+	public void setLength(double side) {
+		// TODO Auto-generated method stub
+		super.setLength(side);
+		super.setWidth(side);
+		super.setHeight(side);
+	}
+
+	@Override
+	public String toString() {
+		return "Cube [getSide()=" + getSide() + ", getHeight()=" + getHeight() + ", getWidth()=" + getWidth()
+				+ ", getLength()=" + getLength() + ", getVolume()=" + getVolume() + ", getSurfaceArea()="
+				+ getSurfaceArea() + ", getColor()=" + getColor() + ", getName()=" + getName() + "]";
+	}
 
 	
 
