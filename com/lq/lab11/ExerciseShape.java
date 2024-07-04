@@ -27,6 +27,23 @@ public class ExerciseShape {
 		s[6] =  b ;
 		s[7] =  b1 ;
 		
+		
+		
+	
+	TwoDimensional td [] = new TwoDimensional[3];
+	
+	Circle cr = new Circle(2.5);
+	
+	Rectangle re = new Rectangle(2.2,2.3,"Rose","Pink");
+	
+	Square sq = new Square(3.6);
+	
+	
+	td[0] = cr;
+	td[1] = re;
+	td[2] = sq;
+	
+	
 	
 	
 	
