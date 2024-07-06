@@ -19,6 +19,16 @@ public class ExercisePrint {
 		Shape b = new Box(5.6,5.7,5.8);
 		Shape c2 = new Circle(6.8);
 
+	s[0] = r ;
+	s[1] = s1 ;
+	s[2] = c1 ;
+	s[3] = b ;
+	s[4] = c2 ;
+	
+	for (Shape shape : s) {
+		System.out.println(shape);
+	}
+	
 	
 	
 	
