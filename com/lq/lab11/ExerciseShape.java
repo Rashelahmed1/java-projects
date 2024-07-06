@@ -27,7 +27,19 @@ public class ExerciseShape {
 		s[6] =  b ;
 		s[7] =  b1 ;
 		
-		
+		for (Shape shape : s) {
+			shape.setColor("Red");
+		}
+
+		for (Shape shape : s) {
+			
+				if (shape instanceof ThreeDimensional) {
+					ThreeDimensional temp = (ThreeDimensional)shape ;
+					System.out.println(temp.getVolume());
+				}
+				
+			
+		}
 		
 	
 	TwoDimensional td [] = new TwoDimensional[3];
@@ -42,6 +54,11 @@ public class ExerciseShape {
 	td[0] = cr;
 	td[1] = re;
 	td[2] = sq;
+	
+	for (TwoDimensional twoDimensional : td) {
+		System.out.println( twoDimensional.getArea());
+		System.out.println( twoDimensional.getPerimeter());
+	}
 	
 	
 	
